@@ -1,17 +1,16 @@
 package com.yun;
 
-public class Stars {
+public class StarLine {
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {
             for (int k = 0; k < 20; k++) {
-                if (i == 1 || i ==8 ) {
-                    System.out.print(" ");
-                } else {
+                if (2*i == 19-k) {
                     System.out.print("*");
+                } else {
+                    System.out.print(" ");
                 }
             }
             System.out.println();
         }
     }
 }
-
