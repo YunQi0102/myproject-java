@@ -14,8 +14,7 @@ public class Hello {
         System.out.println(result);
         if (result) {
             System.out.println("Good for you!");
-        }
-        else {
+        } else {
             System.out.println("Too bad");
         }
     }
