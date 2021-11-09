@@ -1,6 +1,6 @@
 package com.yun;
 
-public class StarLine {
+public class StarLineX {
     public static void main(String[] args) {
         for (int i = 0; i < 11; i++) {
             for (int k = 0; k < 21; k++) {
