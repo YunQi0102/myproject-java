@@ -1,6 +1,6 @@
 package com.yun;
 
-public class Hello {
+public class Practice {
     public static void main(String[] args) {
         System.out.println("Hello!");
         int age = 20;
