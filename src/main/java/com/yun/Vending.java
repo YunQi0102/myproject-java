@@ -10,22 +10,26 @@ public class Vending {
         while (!end) {
             System.out.println("Please put your coin (1/5/10):    Total:" + total);
             String s = scanner.next();
-            int num = Integer.parseInt(s);
-            switch (num) {
-                case 1:
-                    total = total + num;
-                    break;
-                case 5:
-                    total = total + num;
-                    break;
-                case 10:
-                    total = total + num;
-                    break;
-                case 0:
-                    end = true;
-                    break;
-                default:
-                    break;
+            try {
+                int num = Integer.parseInt(s);
+                switch (num) {
+                    case 1:
+                        total = total + num;
+                        break;
+                    case 5:
+                        total = total + num;
+                        break;
+                    case 10:
+                        total = total + num;
+                        break;
+                    case 0:
+                        end = true;
+                        break;
+                    default:
+                        break;
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Error");
             }
         }
         System.out.println("END");
