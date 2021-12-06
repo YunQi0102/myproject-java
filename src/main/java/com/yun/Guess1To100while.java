@@ -8,7 +8,7 @@ public class Guess1To100while {
         Random random = new Random();
         int secret = random.nextInt(100)+1;
         System.out.println(secret);
-        int min = 0;
+        int min = 1;
         int max = 100;
         boolean play = true;
         while (play) {
