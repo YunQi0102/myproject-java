@@ -3,7 +3,7 @@ package com.fju;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Guess1To100 {
+public class Guess1To100for {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
