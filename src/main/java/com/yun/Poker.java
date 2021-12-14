@@ -5,8 +5,10 @@ public class Poker {
         char[] types = {'s','h','d','c'};
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 13; j++) {
-                System.out.println();
+                System.out.print(types[i]);
+                System.out.print(" ");
             }
+            System.out.println();
         }
     }
 }
