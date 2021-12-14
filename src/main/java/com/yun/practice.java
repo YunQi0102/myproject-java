@@ -6,6 +6,10 @@ public class Practice {
         int age = 20;
         boolean adult = age > 18;
         System.out.println(adult);
+        
+        //unicode
+        int n = 0x00F6;
+        System.out.println((char)n);
 
         int n = 5;
         boolean result = n > 4;
