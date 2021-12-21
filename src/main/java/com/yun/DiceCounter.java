@@ -5,9 +5,13 @@ public class DiceCounter {
         int[] counters = new int[6];
         for (int i = 0; i < 10; i++) {
             Dice dice = new Dice();
-            Dice dice1 = new Dice();
             dice.roll();
-            System.out.println(dice.point);
+            System.out.print(dice.point);
+            if (dice.isMax()) {
+                System.out.println("*");
+            } else {
+                System.out.println();
+            }
             counters[dice.point-1]++;
         }
         for (int i = 0; i < 6; i++) {
