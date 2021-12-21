@@ -1,26 +1,22 @@
-package com.yun;
+package com.fju;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Guess1To10 {
     public static void main(String[] args) {
-        Random random = new Random();
-        int secret = random.nextInt(10)+1;
-        System.out.println(secret);
+        GuessGame game = new GuessGame();
+        System.out.println(game.secret);
         System.out.println("Please enter a number 1-10:");
-        boolean play = true;
-        while (play) {
-            Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
+        while (!game.end) {
             String s = scanner.next();
-            int num = Integer.parseInt(s);
-            if (num > secret) {
+            int n = Integer.parseInt(s);
+            if (game.bigger(n)) {
                 System.out.println("Smaller");
-            } else if (num < secret) {
+            } else if (game.smaller(n)) {
                 System.out.println("Bigger");
             } else {
                 System.out.println("Bingo!");
-                play = false;
             }
         }
     }
