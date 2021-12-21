@@ -3,16 +3,11 @@ package com.fju;
 import java.util.Random;
 
 public class Dice {
-    public static void main(String[] args) {
+    int point = 1;
+
+    public void roll() {
+        System.out.println("rolling");
         Random random = new Random();
-        int[] counters = new int[6];
-        for (int i = 0; i < 10; i++) {
-            int n = random.nextInt(6)+1;
-            System.out.println(n);
-            counters[n-1]++;
-        }
-        for (int i = 0; i < 6; i++) {
-            System.out.println((i+1)+" "+counters[i]+" times");
-        }
+        point = random.nextInt(6)+1;
     }
 }
