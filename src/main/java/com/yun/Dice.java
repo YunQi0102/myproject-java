@@ -8,7 +8,6 @@ public class Dice {
     public Dice() {
         point = new Random().nextInt(6)+1;
     }
-
     /*public void roll() {
         Random random = new Random();
         point = random.nextInt(6)+1;
