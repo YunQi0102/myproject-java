@@ -5,10 +5,8 @@ public class DiceCounter {
         int[] counters = new int[6];
         for (int i = 0; i < 10; i++) {
             Dice dice = new Dice();
-            dice.roll();
             System.out.print(dice.point);
-            String s = dice.isMax() ? "*" : "";
-            System.out.println(s);
+            System.out.println(dice.isMax() ? "*" : "");
             /*if (dice.isMax()) {
                 System.out.println("*");
             } else {
@@ -16,8 +14,15 @@ public class DiceCounter {
             }*/
             counters[dice.point-1]++;
         }
+        int max = 0;
+        int point = 0;
         for (int i = 0; i < 6; i++) {
-            System.out.println((i+1)+" "+counters[i]+" times");
+            //System.out.println((i+1) + " " + counters[i] + " times");
+            if (counters[i] > max) {
+                max = counters[i];
+                point = i+1;
+            }
         }
+        System.out.println(point + " " + max + " times");
     }
 }
