@@ -20,7 +20,7 @@ public class Vending {
                 case "5":
                 case "10":
                     int n = Integer.parseInt(s);
-                    total+=n; //total = total + 1;
+                    total+=n; //total = total + n;
                     break;
                 case "a":
                 case "b":
